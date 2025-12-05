@@ -1,0 +1,11 @@
+python train.py --ckpt_path= \
+                --name=TabMLP \
+                --model=TabMLP \
+                --dataset=lung \
+                --bs=4 \
+                --lr=1e-2 \
+                --lr_decay_step=600000 \
+                --lr_scheduler=cosine_warmup \
+                --epochs=20 \
+                --num_slices=12 \
+                --gpu_ids=3 \
